@@ -1,0 +1,42 @@
+@import url('../../Fonts/fonts.css');
+.upNavContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    padding: 0 0;
+    top: 0;
+    background-color: #E8DCCE;
+    z-index: 1000;
+}
+.upNavContainer .fillUpNav{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.fillUpNav .logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+}
+.fillUpNav .navField{
+    font-family: "Montserrat-Medium";
+} 
+.navField .navLink{
+    color: #4A5241;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+.navField .navLink:hover{
+    color: rgba(28, 28, 225, 0.817);
+}
+.navField .navLink::after{
+    content: '';
+    border-right: 1.5px solid grey;
+    margin-left: 8px;
+}
