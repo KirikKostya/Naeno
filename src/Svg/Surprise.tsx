@@ -1,15 +1,13 @@
 import React from 'react'
+import { ISvgProps } from './Interface';
 
-interface ISurpriseProps{
-    width?: string
-    height?: string
-}
-const Surprise: React.FC<ISurpriseProps> = (props) => {
+const Surprise: React.FC<ISvgProps> = (props) => {
 
-    const {width, height} = props
+    const {width, height} = props;
+
   return (
     <svg width={`${width || 80}`} height={`${height || 36}`} viewBox="0 0 80 36" fill="none">
-        <g clip-path="url(#clip0_2_419)">
+        <g clipPath="url(#clip0_2_419)">
             <path d="M27.1792 29.8441C25.6839 30.1594 24.2015 30.1637 22.7072 29.838C22.5169 29.7966 22.4356 30.0851 22.6262 30.1309C24.1739 30.5015 25.721 30.5308 27.2785 30.2017C27.5117 30.1533 27.4133 29.7948 27.1792 29.8441Z" fill="#79736D"/>
             <path d="M12.7915 33.5372C9.33718 33.7601 5.88719 33.9924 2.42718 34.1255C2.15049 34.1367 2.14807 34.56 2.42718 34.5574C5.88926 34.5202 9.35402 34.3406 12.7915 33.9147C13.0267 33.8862 13.0395 33.5216 12.7915 33.5372Z" fill="#79736D"/>
             <path d="M21.2219 23.757C15.1154 24.1932 8.97027 24.0394 2.87884 24.4826C2.70815 24.4955 2.71117 24.7288 2.87884 24.7461C8.87309 25.3499 15.2335 24.8048 21.2219 24.2969C21.5648 24.2675 21.5705 23.7319 21.2219 23.757Z" fill="#79736D"/>
@@ -20,7 +18,7 @@ const Surprise: React.FC<ISurpriseProps> = (props) => {
         </g>
         <defs>
             <clipPath id="clip0_2_419">
-                <rect width="80" height="36" fill="white"/>
+                <rect width={`${width || 80}`} height={`${height || 36}`} fill="white"/>
             </clipPath>
         </defs>
     </svg>

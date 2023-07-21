@@ -4,7 +4,7 @@ import './Style/App.css';
 
 const App:React.FC = () => {
   return (
-    <div className='app'>
+    <div className='app' id='main'>
       <Router />
     </div>
   )

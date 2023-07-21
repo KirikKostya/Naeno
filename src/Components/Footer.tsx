@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </div>
         </div>
         <span style={{width:'100%', maxWidth: '1250px', border: '1.5px dashed #E8DCCE'}}/>
-        <a href='https://multisports.by/info/politika-konfidentsialnosti' target='_blank' className='footerNavLink' style={{width: '90%', margin: '5px 0'}}>Политика конфиденциальности</a>
+        <a href='https://multisports.by/info/politika-konfidentsialnosti' target='_blank' className='footerNavLink' >Политика конфиденциальности</a>
     </footer>
   )
 }

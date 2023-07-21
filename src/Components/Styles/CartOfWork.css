@@ -1,0 +1,28 @@
+.cartContainer{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.carouselContainer{
+    width: 250px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.cartContainer header{
+    font-family: 'Montserrat-Medium';
+    font-size: 14.5pt;
+    font-weight: 400;
+    letter-spacing: .7px;
+    color: #4A5241;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.cartContainer span{
+    font-family: 'Montserrat-Bold';
+    font-size: 12pt;
+    letter-spacing: .5px;
+    color: #495242;
+}

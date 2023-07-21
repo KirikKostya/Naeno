@@ -1,8 +1,14 @@
 .questionsContainer{
-    width: 100%;
+    width: 90%;
     max-width: 1130px;
     display: flex;
-    align-items: center;
-    justify-content:start;
+    align-items: start;
+    justify-content: start;
     margin: 10px 0;
+}
+.questionsContainer h3{
+    /* width: 20%; */
+    font-family: 'Montserrat-Medium';
+    font-weight: 500;
+    margin-right: 150px;
 }

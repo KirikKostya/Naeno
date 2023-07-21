@@ -46,9 +46,13 @@ footer .mainFooterField{
     margin: 4.5px 0;
 }
 .footerNavLink{
+    width: 90%;
+    max-width: 1250px;
+    text-align: start;
     color: #E8DCCE;
     text-decoration: none;
     transition: all .2s ease-in;
+    margin: 5px 0;
 }
 .list .footerNavLink:hover{
     color: #fcfcfc;

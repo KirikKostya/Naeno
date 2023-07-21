@@ -11,7 +11,7 @@
     z-index: 1000;
 }
 .upNavContainer .fillUpNav{
-    width: 100%;
+    width: 95%;
     max-width: 1250px;
     display: flex;
     flex-direction: row;
@@ -19,11 +19,12 @@
     justify-content: start;
 }
 .fillUpNav .logo{
-    width: 100px;
-    height: 100px;
-    margin-right: 100px;
+    width: 130px;
+    height: 90px;
+    margin-right: 50px;
 }
 .fillUpNav .navField{
+    flex: 1 1;
     font-family: "Montserrat-Medium";
 } 
 .navField .navLink{
@@ -39,4 +40,12 @@
     content: '';
     border-right: 1.5px solid grey;
     margin-left: 8px;
+}
+.active{
+    color: #1677ff !important
+}
+.active::after{
+    content: '';
+    border-bottom-width: 2px !important;
+    border-bottom-color: #1677ff !important;
 }

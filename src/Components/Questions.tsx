@@ -1,6 +1,7 @@
 import React from 'react';
 import { Collapse } from 'antd';
 import './Styles/Questions.css';
+import TwigSvg from '../Svg/TwigSvg';
 
 interface IItems{
     key: number
@@ -36,7 +37,7 @@ const items: IItems[] = [
   },
   {
     key: 5,
-    label: 'Как упаковываются изделия ?',
+    label: 'Возможно ли сделать по моим размерам ?',
     children: <p>{text}</p>,
   },
   {
@@ -48,8 +49,12 @@ const items: IItems[] = [
 
 const Questions: React.FC = () => {
   return (
-    <div className='questionsContainer'>
-        <Collapse items={items} style={{width: '700px'}}/>
+    <div id='questions' className='questionsContainer'>
+        <h3>Частозадаваемые вопросы :</h3>
+        <div style={{position: 'absolute', margin: '75px 0 0 30px'}}>
+          <TwigSvg/>
+        </div>
+        <Collapse items={items} style={{width: '550px'}}/>
     </div>
   )
 }

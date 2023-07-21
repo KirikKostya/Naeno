@@ -1,0 +1,15 @@
+.catalogHeader{
+    width: 93%;
+    max-width: 1250px;
+    text-align: start;
+    font-family: 'Montserrat-Bold';
+    color: #4A5241;
+}
+.catalogContainer{
+    width: 95%;
+    max-width: 1250px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

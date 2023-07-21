@@ -1,0 +1,17 @@
+.headerPopularOrders{
+    width: 85%;
+    max-width: 1250px;
+    font-family: 'Montserrat-Medium';
+    text-align: start;
+    letter-spacing: .8px;
+    display: flex;
+    align-items: center;
+}
+.popularOrdersContainer{
+    width: 90%;
+    max-width: 1250px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
