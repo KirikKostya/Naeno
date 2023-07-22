@@ -28,8 +28,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
         </div>
-        <span style={{width:'100%', maxWidth: '1250px', border: '1.5px dashed #E8DCCE'}}/>
-        <a href='https://multisports.by/info/politika-konfidentsialnosti' target='_blank' className='footerNavLink' >Политика конфиденциальности</a>
+        <a href='https://multisports.by/info/politika-konfidentsialnosti' target='_blank' className='footerNavLink privacyPolicy' >Политика конфиденциальности</a>
     </footer>
   )
 }

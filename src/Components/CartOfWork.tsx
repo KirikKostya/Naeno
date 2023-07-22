@@ -1,8 +1,8 @@
 import React from 'react';
-import './Styles/CartOfWork.css';
-import { Image } from 'antd';
 import Carousel from 'react-material-ui-carousel';
 import { IItem } from '../Products';
+import { Image } from 'antd';
+import './Styles/CartOfWork.css';
 
 interface ICartOfWorkProps{
     item: IItem
@@ -26,7 +26,7 @@ const CartOfWork: React.FC<ICartOfWorkProps> = (props) => {
               : <Carousel className='carouselContainer' autoPlay={false} cycleNavigation={false} navButtonsAlwaysVisible={false} navButtonsProps={{style: {width: '35px', height: '35px', display: `${item.icons.length <= 1 ? 'none' : 'flex'}`}}}>
                   {
                     item.icons.map(photo=>(
-                      <Image key={photo} src={photo} width={'100%'} height={'230px'} fallback={require('../Photos/somethingWentWrong.png')}/>
+                      <Image key={photo} src={photo}className='imageAntd' fallback={require('../Photos/somethingWentWrong.png')}/>
                     ))
                   }
                 </Carousel>

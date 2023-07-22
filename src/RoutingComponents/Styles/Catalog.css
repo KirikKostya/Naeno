@@ -13,3 +13,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1000px) {
+    .catalogContainer{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .catalogContainer{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .catalogContainer{
+        justify-content: center;
+    }
+}

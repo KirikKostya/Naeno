@@ -51,10 +51,10 @@ const Questions: React.FC = () => {
   return (
     <div id='questions' className='questionsContainer'>
         <h3>Частозадаваемые вопросы :</h3>
-        <div style={{position: 'absolute', margin: '75px 0 0 30px'}}>
+        <div className='svgQuestions'>
           <TwigSvg/>
         </div>
-        <Collapse items={items} style={{width: '550px'}}/>
+        <Collapse items={items} className='questionsCollapse'/>
     </div>
   )
 }

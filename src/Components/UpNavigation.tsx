@@ -144,6 +144,7 @@ const UpNavigation: React.FC = () => {
       ],
     }
   ];
+  
   return (
     <div className='upNavContainer'>
         <div className='fillUpNav'>
