@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Main from '../RoutingComponents/Main';
 import Catalog from '../RoutingComponents/Catalog';
 import BrandHistory from '../RoutingComponents/BrandHistory';
@@ -8,7 +8,7 @@ import Return from '../RoutingComponents/Return';
 
 const Router:React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path='/' element={<Main />}/>
             <Route path='/catalog' element={<Catalog />}/>
@@ -16,7 +16,7 @@ const Router:React.FC = () => {
             <Route path='/delivery' element={<Delivery />}/>
             <Route path='/return' element={<Return />}/>
         </Routes>
-    </BrowserRouter>        
+    </HashRouter>        
   )
 }
 
