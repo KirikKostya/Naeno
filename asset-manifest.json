@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Naeno/static/css/main.914facb6.css",
+    "main.js": "/Naeno/static/js/main.22337ce0.js",
+    "static/js/787.032b0ad7.chunk.js": "/Naeno/static/js/787.032b0ad7.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/Naeno/static/media/Montserrat-Regular.087334ca601e288c996e.ttf",
+    "static/media/Montserrat-Bold.ttf": "/Naeno/static/media/Montserrat-Bold.762081826406b019c89c.ttf",
+    "static/media/Montserrat-Light.ttf": "/Naeno/static/media/Montserrat-Light.5f5ee38fd17c50b45cc5.ttf",
+    "static/media/Montserrat-Medium.otf": "/Naeno/static/media/Montserrat-Medium.4b4a4b36283ebeb2cf89.otf",
+    "static/media/GARAIT.TTF": "/Naeno/static/media/GARAIT.a9746f3bdd6da54dc166.TTF",
+    "static/media/LOGO-2.png": "/Naeno/static/media/LOGO-2.1f73d428363a042874ec.png",
+    "static/media/LOGO-3.png": "/Naeno/static/media/LOGO-3.689f6e6896da996a6f7c.png",
+    "static/media/somethingWentWrong.png": "/Naeno/static/media/somethingWentWrong.915b7e167f3e83ab3eb2.png",
+    "index.html": "/Naeno/index.html",
+    "main.914facb6.css.map": "/Naeno/static/css/main.914facb6.css.map",
+    "main.22337ce0.js.map": "/Naeno/static/js/main.22337ce0.js.map",
+    "787.032b0ad7.chunk.js.map": "/Naeno/static/js/787.032b0ad7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.914facb6.css",
+    "static/js/main.22337ce0.js"
+  ]
+}
