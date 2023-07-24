@@ -52,13 +52,16 @@ footer .mainFooterField{
     width: 90%;
     max-width: 1250px;
     text-align: start;
-    color: #E8DCCE;
-    text-decoration: none;
+    color: #E8DCCE !important;
+    text-decoration: none !important;
     transition: all .2s ease-in;
     margin: 5px 0;
 }
 .list .footerNavLink:hover{
     color: #fcfcfc;
+}
+.activeFooter{
+    color: #fcfcfc !important
 }
 
 @media screen and (max-width: 740px) {

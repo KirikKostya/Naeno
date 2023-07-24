@@ -1,0 +1,218 @@
+.returnContainer{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**/
+.returnContainer .returnConditions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 2px dashed #79736D;
+}
+.returnConditions h2{
+    width: 40%;
+    font-family: 'Montserrat-Bold';
+    color: #4A5241;
+}
+.returnConditions p{
+    width: 60%;
+    font-family: 'Montserrat-Regular';
+    font-size: 11pt;
+    color: #4A5241
+}
+/**/
+.returnContainer .consumerRights{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.consumerRights .lawsAndList{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.lawsAndList .law{
+    font-family: 'Montserrat-Regular';
+    font-size: 12pt;
+}
+.lawsAndList .law span{
+    color: #AE7B42;
+}
+.lawsAndList ul{
+    padding: 0 0 0 15px;
+}
+.lawsAndList ul li{
+    font-family: 'Montserrat-Regular';
+    margin: 2px 0;
+}
+.consumerRights .paragraph{
+    width: 60%;
+    font-family: 'Montserrat-Regular';
+    font-size: 11pt;
+    color: #4A5241
+}
+/**/
+.returnGoodsOfGoodQuality{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4A5241;
+    padding: 30px 0;
+}
+.returnGoodsOfGoodQuality .headerAndAddress{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 10px;
+}
+.returnGoodsOfGoodQuality .headerAndAddress h2{
+    font-family: 'Montserrat-Bold';
+    color: #E8DCCE
+}
+.headerAndAddress .addressToReturn{
+    color: #E8DCCE;
+    font-family: 'Montserrat-Regular';
+    font-size: 9pt;
+    border: 1px dashed #E8DCCE;
+    padding: 10px;
+    margin: 20px 0 ;
+}
+.headerAndAddress .addressToReturn span{
+    display: inline-block;
+    color: #AE7B42;
+    padding: 0;
+    margin: 10px 0;
+}
+/**/
+.returnGoodsOfGoodQuality .returnSteps{
+    width: 50%;
+}
+.returnSteps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px 0 ;
+}
+.step header{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-Medium';
+}
+.step header #numb{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8DCCE;
+    border-radius: 50%;
+    color: #AE7B42;
+    margin-right: 15px;
+}
+.step header p{
+    font-size: 13pt;
+    color: #E8DCCE;
+}
+.step #description{
+    font-size: 10pt;
+    color: #E8DCCE;
+    padding-left: 20px;
+    font-family: 'Montserrat-Regular';
+}
+.step #description i{
+    color: #AE7B42
+}
+/**/
+.returnGoodsOfBadQuality{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.returnGoodsOfBadQuality h2{
+    width: 40%;
+    font-family: 'Montserrat-Bold';
+    color: #4A5241;
+    margin: 0 0 0 10px;
+}
+.returnGoodsOfBadQuality .rools{
+    width: 60%;
+}
+.returnGoodsOfBadQuality .rools{
+    color: #4A5241;
+}
+.returnGoodsOfBadQuality .rools span{
+    color: #AE7B42
+}
+.returnGoodsOfBadQuality .rools .note{
+    width: 400px;
+    border: 1px dashed #79736D;
+    padding: 10px;
+    margin-top: 50px ;
+}
+.returnGoodsOfBadQuality .rools .note p{
+    color: #AE7B42;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+/*Media*/
+
+@media screen and (max-width: 1000px) {
+    .returnContainer .returnConditions{
+        flex-direction: column;
+        align-items: start;
+    }
+    .returnConditions h2, .returnConditions p{
+        width: 95%;
+    }
+    .returnContainer .consumerRights{
+        flex-direction: column;
+    }
+    .consumerRights .lawsAndList, .consumerRights .paragraph{
+        width: 95%;
+    }
+    /**/
+    .returnGoodsOfBadQuality{
+        flex-direction: column;    
+        align-items: start;   
+    }
+    .returnGoodsOfBadQuality h2,
+    .returnGoodsOfBadQuality .rools{
+        width: 95%;
+    }
+    .returnGoodsOfBadQuality .rools .note{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .returnGoodsOfGoodQuality{
+        flex-direction: column;
+        align-items: start;
+    }
+    .returnGoodsOfGoodQuality .headerAndAddress, .returnGoodsOfGoodQuality .returnSteps{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .returnContainer .returnConditions, .returnContainer .consumerRights{
+        align-items: center;
+    }
+    .returnGoodsOfGoodQuality{
+        align-items: center;
+    }
+}

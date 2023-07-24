@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Styles/UpNavigation.css';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
@@ -15,6 +15,7 @@ const UpNavigation: React.FC = () => {
 
   const upNavGroupState = useSelector((state: IInitialState)=>state.upNavGroupState);
   const [iconState, setIconState] = useState<string>('');
+  const [activeInlineMenu, setActiveInlineMenu] = useState<boolean>(false);
 
   const items = [
     {
@@ -144,16 +145,24 @@ const UpNavigation: React.FC = () => {
       ],
     }
   ];
+
   
   return (
-    <div className='upNavContainer'>
+    <>
+      <div className='upNavContainer'>
         <div className='fillUpNav'>
-            <img onClick={()=>console.log(iconState)} className='logo' src={require('../Photos/LOGO-3.png')} alt='photo'/>
+            <img className='logo' src={require('../Photos/LOGO-3.png')} alt='photo'/>
             <nav className='navField'>
-                <Menu items={items} mode='horizontal' style={{width: '100%', background: 'transparent', fontFamily: 'Montserrat-Medium'}} />
+              <div 
+                className='hamburger' 
+                onClick={() => setActiveInlineMenu(!activeInlineMenu)}
+              > ☰ </div>
+              <Menu items={items} mode='horizontal' className='menu menuHorizontal' />
             </nav>
         </div>
-    </div>
+      </div>
+      <Menu items={items} mode='inline' className={`menu menuInline ${activeInlineMenu ? 'open' : ''}`} />
+    </>
   )
 }
 

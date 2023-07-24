@@ -70,3 +70,22 @@
         font-size: 8pt;
     }
 }
+@media screen and (max-width: 425px) {
+    .cartContainer{
+        width: 170px;
+        margin: 5px;
+    }
+    .carouselContainer{
+        width: 170px;
+        height: 150px;
+    }
+    .carouselContainer .imageAntd{
+        height: 150px !important;
+    }
+    .cartContainer header{
+        font-size: 10pt;
+    }
+    .cartContainer span{
+        font-size: 8pt;
+    }
+}

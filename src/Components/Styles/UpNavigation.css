@@ -26,7 +26,30 @@
 .fillUpNav .navField{
     flex: 1;
     font-family: "Montserrat-Medium";
-} 
+}
+.navField .hamburger{
+    display: none;
+    align-items: center;
+    font-size: 17pt;
+    cursor: pointer;
+}
+.navField .menu{
+    width: 100%;
+    background: transparent;
+    font-family: 'Montserrat-Medium' !important
+}
+.menuInline{
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+}
+.open{
+    max-height: 400px;
+}
+.displayNone{
+    display: none
+}
 .navField .navLink{
     color: #4A5241;
     margin: 0 5px;
@@ -56,8 +79,23 @@
     }
 }
 @media screen and (max-width: 630px) {
-    .fillUpNav .logo{
-        margin-right: 15px;
+    .upNavContainer .fillUpNav{
+        width: 75%;
+        justify-content: space-between;
+    }
+    .fillUpNav .navField{
+        flex: 0;
+    }
+    .menuHorizontal{
+        display: none !important;
+    }
+    .menuInline{
+        display: block;
+        background: #E8DCCE;
+        border-top: 1.5px solid black;
+    }
+    .navField .hamburger{
+        display: flex !important;
     }
 }
 @media screen and (max-width: 550px) {

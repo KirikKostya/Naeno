@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
                 </div>
                 <div className='list'>
                     <h5>Для покупателей :</h5>
-                    <li><NavLink className='footerNavLink' to={'delivery'}>Доставка и получение</NavLink></li>
-                    <li><NavLink className='footerNavLink' to={'return'}>Возврат</NavLink></li>
-                    <li><NavLink className='footerNavLink' to={'questions'}>Частые вопросы</NavLink></li>
+                    <li><NavLink className={({isActive, isPending})=>isPending ? 'footerNavLink' : isActive ? 'footerNavLink activeFooter' : 'footerNavLink'} to={'/delivery'}>Доставка и получение</NavLink></li>
+                    <li><NavLink className={({isActive, isPending})=>isPending ? 'footerNavLink' : isActive ? 'footerNavLink activeFooter' : 'footerNavLink'} to={'/return'}>Возврат</NavLink></li>
+                    <li><NavLink className={({isActive, isPending})=>isPending ? 'footerNavLink' : isActive ? 'footerNavLink activeFooter' : 'footerNavLink'} to={'/questions'}>Частые вопросы</NavLink></li>
                 </div>
                 <div className='list'>
                     <h5>Контакты :</h5>
