@@ -1,0 +1,177 @@
+.howMakeOrder{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px 0;
+}
+.howMakeOrder #header{
+    text-align: start;
+    font-family: 'Montserrat-Bold';
+    font-size: 16pt;
+    color: #4A5241;
+    margin-left: 20px;
+}
+.howMakeOrder .steps{
+    width: 98%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+.steps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.steps .step span{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AE7B42;
+    border: 1px solid #79736d89;
+    border-radius: 50%;
+}
+.steps .step p{
+    width: 190px;
+    text-align: center;
+    font-family: 'Montserrat-Regular';
+    font-size: 10pt;
+    color: #4A5241;
+    margin: 10px 0;
+}
+.hr{
+    width: 100px;
+    border: 1.5px dashed #79736D; 
+    margin: 35px 0 0 0
+}
+/**/
+.paymentMethods{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: start;
+    background: #4A5241;
+    padding: 20px 0 0 0;
+}
+.paymentMethods header{
+    width: 40%;
+    font-family: 'Montserrat-Bold';
+    font-size: 16pt;
+    color: #E8DCCE; 
+    padding-left: 20px;
+}
+.paymentMethods .methods{
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat-Regular';
+    padding: 10px;
+    color: #E8DCCE;
+}
+.paymentMethods .methods span,
+.paymentMethods .methods .cardTypes svg,
+.paymentMethods .methods #par,
+.paymentMethods .methods #contact{
+    font-size: 10pt;
+}
+
+.paymentMethods .methods #contact{
+    transition: all .25s ease-in;
+    position: relative;
+	color: white;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.paymentMethods .methods #contact::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px;
+	background-color: white; 
+	transition: width 0.4s ease-out; 
+}
+
+.paymentMethods .methods #contact:hover:after,
+.paymentMethods .methods #contact:focus:after {
+	width: 70px;
+}
+.contactItem{
+    font-family: 'Montserrat-Medium';
+    font-size: 12pt;
+    color: #4A5241;
+    margin: 3px 0;
+}
+.contactItem a{
+    color: #4A5241;
+    transition: .3s ease-out;
+}
+.contactItem a:hover{
+    color: #b7b7b7
+}
+
+/**/
+.deliveryCondition{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    align-items: start;
+    margin: 40px 0;
+}
+.deliveryCondition header{
+    width: 40%;
+    font-family: 'Montserrat-Bold';
+    font-size: 16pt;
+    color: #4A5241;
+    padding-left: 20px;
+}
+.deliveryCondition .condition{
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #4A5241;
+    font-family: 'Montserrat-Regular';
+    font-size: 11pt;
+    padding: 0 10px;
+}
+.condition p{
+    font-family: 'Montserrat-Medium';
+    font-size: 12pt;
+}
+.condition svg{
+    margin-right: 10px;
+}
+
+.deliveryMethods .icons{
+    display: flex;
+    align-items: center;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 700px) {
+    .howMakeOrder .steps{
+        flex-direction: column;
+    }
+    .hr{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px){
+    .paymentMethods, .deliveryCondition, .deliveryMethods .icons{
+        flex-direction: column;
+        align-items: start;
+    }
+
+}

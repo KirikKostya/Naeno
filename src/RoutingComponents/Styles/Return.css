@@ -157,7 +157,7 @@
     color: #AE7B42
 }
 .returnGoodsOfBadQuality .rools .note{
-    width: 400px;
+    max-width: 400px;
     border: 1px dashed #79736D;
     padding: 10px;
     margin-top: 50px ;
@@ -214,5 +214,10 @@
     }
     .returnGoodsOfGoodQuality{
         align-items: center;
+    }
+}
+@media screen and (max-width: 630px) {
+    .returnGoodsOfBadQuality .rools .note{
+        font-size: 9pt;
     }
 }

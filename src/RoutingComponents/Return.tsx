@@ -2,19 +2,8 @@ import React from 'react';
 import UpNavigation from '../Components/UpNavigation';
 import Footer from '../Components/Footer';
 import './Styles/Return.css';
-import { Steps } from 'antd';
 import TwigSvg from '../Svg/TwigSvg';
 
-const items = [
-  {
-    title: <p className='stepsTitle'>Свяжитесь с нами,<br/> сообщите причину, обсудите<br/> возможные варианты возврата</p>,
-    description: 'Нам важно, чтобы клиент остался доволен покупкой. Мы всегда готовы идти на встречу и найти вариант, который устроит обе стороны. Вышлете товар в оригинальной упаковке и имеющий товарный вид.'
-  },
-  {
-    title: <p className='stepsTitle'>Вышлете товар в оригинальной<br/> упаковке и имеющий товарный<br/> вид</p>,
-    description: '',
-  },
-]
 const Return: React.FC= () => {
   return (
     <>

@@ -62,28 +62,6 @@ const UpNavigation: React.FC = () => {
       icon: <FolderOpenFilled className={iconState === 'catalog' ? 'active' : ''}/>,
     },
     {
-      label: <NavLink 
-                to={'/brandHistory'} 
-                onClick={()=>{
-                  setIconState('brand history');
-                  dispatch(setUpNavGroupState(''))
-                }}
-                className={
-                  ({ isActive }) =>
-                    {
-                      if(isActive){
-                        setIconState('brand history');
-                        return 'active';
-                      }
-                      return ''
-                    }
-                }>
-                  История бренда
-              </NavLink>,
-      key: 'brand history',
-      icon: <ReadOutlined className={iconState === 'brand history' ? 'active' : ''}/>,
-    },
-    {
       label: <span className={upNavGroupState}>Для пользователя</span>,
       key: 'SubMenu',
       icon: <CaretDownFilled className={upNavGroupState} />,
