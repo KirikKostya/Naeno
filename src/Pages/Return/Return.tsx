@@ -1,29 +1,29 @@
 import React from 'react';
-import UpNavigation from '../Components/UpNavigation';
-import Footer from '../Components/Footer';
-import './Styles/Return.css';
-import TwigSvg from '../Svg/TwigSvg';
+import UpNavigation from '../../Components/UpNavigation';
+import Footer from '../../Components/Footer';
+import TwigSvg from '../../ui/Svg/TwigSvg';
+import styles from './Return.module.css';
 
 const Return: React.FC= () => {
   return (
     <>
       <UpNavigation />
-      <div className='returnContainer'>
-        <div className='returnConditions'>
+      <div className={styles.returnContainer}>
+        <div className={styles.returnConditions}>
           <h2>Условия возврата</h2>
           <p>
             Если товар был оплачен банковской картой через сайт, то возврат <br/>осуществляется на карту, с которой была произведена оплата. Срок<br/>
             поступления денежных средств на карту - от 3 до 30 дней с момента<br/> осуществления возврата Продавцом.
           </p>
         </div>
-        <div className='consumerRights'>
-          <div className='lawsAndList'>
-            <p className='law'>
+        <div className={styles.consumerRights}>
+          <div className={styles.lawsAndList}>
+            <p className={styles.law}>
               Согласно Закону Республики Беларусь <br/>
               <span> «О защите прав потребителей» (ч. 1 ст. 28) </span><br/>
               покупатель имеет право в течение 14 дней<br/> с момента получения сделать возврат, если:
             </p>
-            <ul className='listOfTypes'>
+            <ul className={styles.listOfTypes}>
               <li>Товар не подошел по форме,</li>
               <li>Товар не подошел по габаритам,</li>
               <li>Товар не подошел по фасону,</li>
@@ -32,7 +32,7 @@ const Return: React.FC= () => {
               <li>Товар не подошел по комплектации.</li>
             </ul>
           </div>
-          <p className='paragraph'>
+          <p className={styles.paragraph}>
             При условии, что товар не был в употреблении, сохранены его<br/>
             товарный вид и потребительские свойства, есть доказательства<br/>
             факта приобретения этого товара у данного продавца.<br/>
@@ -41,10 +41,10 @@ const Return: React.FC= () => {
           </p>
         </div>
       </div>
-      <div className='returnGoodsOfGoodQuality'>
-        <div className='headerAndAddress'>
+      <div className={styles.returnGoodsOfGoodQuality}>
+        <div className={styles.headerAndAddress}>
           <h2>Возврат товара<br/> надлежащего качества</h2>
-          <div className='addressToReturn'>
+          <div className={styles.addressToReturn}>
             Адрес для отправки :<br/>
             <span>УКАЗАТЬ СВОЙ АДРЕС</span><br/>
             Стоимость пересылки возврата товара<br/>
@@ -56,32 +56,32 @@ const Return: React.FC= () => {
             реквизитам или почтовый перевод.
           </div>
         </div>
-        <div className='returnSteps'>
-          <div className='step'>
+        <div className={styles.returnSteps}>
+          <div className={styles.step}>
             <header>
-              <span id='numb'>1</span>
+              <span id={styles.numb}>1</span>
               <p>
                 Свяжитесь с нами,
                 сообщите причину, обсудите<br/> 
                 возможные варианты возврата
               </p>
             </header>
-            <span id='description'>
+            <span id={styles.description}>
               Нам важно, чтобы клиент остался доволен<br/> 
               покупкой. Мы всегда готовы идти на встречу<br/> 
               и найти вариант, который устроит обе стороны.
             </span>
           </div>
-          <div className='step'>
+          <div className={styles.step}>
             <header>
-              <span id='numb'>2</span>
+              <span id={styles.numb}>2</span>
               <p>
                 Вышлете товар в оригинальной
                 упаковке<br/> и имеющий товарный 
                 вид.
               </p>
             </header>
-            <span id='description'>
+            <span id={styles.description}>
               Отправка заказа за счет покупателя.<br/>
               После отправки сообщите нам на электронную<br/>
               почту <i>kirik.kostya@list.ru</i> номер почтового<br/>
@@ -91,12 +91,12 @@ const Return: React.FC= () => {
           </div>
         </div>
       </div>
-      <div className='returnGoodsOfBadQuality'>
+      <div className={styles.returnGoodsOfBadQuality}>
         <div style={{position: 'absolute', left: '125px', marginBottom:'100px',  zIndex: -1, opacity: 0.4}}>
           <TwigSvg />
         </div>
         <h2>Возврат товара<br/> ненадлежащего качества</h2>
-        <div className='rools'>
+        <div className={styles.rools}>
           <p>
             Если вы получили товар ненадлежащего качества (скрытый брак) –<br/>
             пришлите нам на электронную почту 
@@ -106,7 +106,7 @@ const Return: React.FC= () => {
             данного товара. В случае необходимости возврата товара нам,<br/>
             стоимость пересылки оплачивает продавец<br/>
           </p>
-          <div className='note'>
+          <div className={styles.note}>
             <p>Примечание</p>
             По истечении 14 дневного срока с момента<br/>
             покупки, товар возврату и обмену не подлежит   

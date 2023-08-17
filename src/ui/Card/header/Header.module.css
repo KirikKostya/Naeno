@@ -1,0 +1,25 @@
+.header{
+    font-family: 'Montserrat-Medium';
+    font-size: 14.5pt;
+    font-weight: 400;
+    letter-spacing: .7px;
+    color: #4A5241;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 625px) {
+    .header{
+        font-size: 11pt;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header{
+        font-size: 10pt;
+    }
+}
+@media screen and (max-width: 425px) {
+    .header{
+        font-size: 10pt;
+    }
+}

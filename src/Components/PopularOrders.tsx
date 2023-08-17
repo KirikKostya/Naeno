@@ -1,7 +1,7 @@
 import React from 'react';
-import CartOfWork from './CartOfWork';
-import Board from '../Svg/BoardSvg';
+import Board from '../ui/Svg/BoardSvg';
 import { popularProducts as items } from '../Products';
+import Card from '../ui/Card/Card';
 import './Styles/PopularOrders.css';
 
 const PopularOrders: React.FC = () => {
@@ -11,7 +11,7 @@ const PopularOrders: React.FC = () => {
         <div className='popularOrdersContainer'>
             {
                 items.map((item)=>(
-                    <CartOfWork key={item.id} item={item}/>
+                    <Card key={item.id} item={item}/>
                 ))
             }
         </div>

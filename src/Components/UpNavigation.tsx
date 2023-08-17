@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import './Styles/UpNavigation.css';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'antd';
-import { CaretDownFilled, FolderOpenFilled, HomeFilled, PlusCircleOutlined, QuestionCircleOutlined, ReadOutlined, RetweetOutlined } from '@ant-design/icons';
+import { CaretDownFilled, FolderOpenFilled, HomeFilled, PlusCircleOutlined, QuestionCircleOutlined, RetweetOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUpNavGroupState } from '../ReduxToolkit/Slices';
 import { IInitialState } from '../ReduxToolkit/Interfaces';
+import './Styles/UpNavigation.css';
 
 
 const UpNavigation: React.FC = () => {
@@ -129,7 +129,7 @@ const UpNavigation: React.FC = () => {
     <>
       <div className='upNavContainer'>
         <div className='fillUpNav'>
-            <img className='logo' src={require('../Photos/LOGO-3.png')} alt='photo'/>
+            <img className='logo' src={require('../ui/Photos/LOGO-3.png')} alt='photo'/>
             <nav className='navField'>
               <div 
                 className='hamburger' 

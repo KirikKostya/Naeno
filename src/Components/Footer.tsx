@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer>
         <div className='mainFooterField'>
-            <img className='logo2' src={require('../Photos/LOGO-2.png')} alt='logo2' />
+            <img className='logo2' src={require('../ui/Photos/LOGO-2.png')} alt='logo2' />
             <div className='footerInfo'>
                 <div className='list'>
                     <h5>Каталог :</h5>

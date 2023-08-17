@@ -14,19 +14,19 @@ export const products: IProducts[] = [
         items: [
           {
             name: "Часы красные",
-            price: 50,
+            price: 20,
             id: "DW001",
-            icons: [require('./Photos/TimePhoto/Watch.png'), require('./Photos/TimePhoto/Watch2.png'), require('./Photos/TimePhoto/Watch3.png')]
+            icons: ['clock_tree']
           },
           {
             name: "Часы со смолой",
-            price: 60,
+            price: 30,
             id: "DW002",
             icons: ["clock_resin_icon"]
           },
           {
             name: "Часы синие",
-            price: 55,
+            price: 40,
             id: "DW003",
             icons: ["clock_blue_icon"]
           },
@@ -61,13 +61,13 @@ export const products: IProducts[] = [
           },
           {
             name: "Браслет из веток",
-            price: 55,
+            price: 40,
             id: "JW003",
             icons: ["bracelet_branches_icon"]
           },
           {
             name: "Кольцо с живым камнем",
-            price: 60,
+            price: 30,
             id: "JW004",
             icons: ["ring_live_stone_icon"]
           },
@@ -84,7 +84,7 @@ export const products: IProducts[] = [
         items: [
           {
             name: "Пазл 'Лесные животные'",
-            price: 25,
+            price: 20,
             id: "TOY001",
             icons: ["puzzle_forest_animals_icon"]
           },
@@ -96,19 +96,19 @@ export const products: IProducts[] = [
           },
           {
             name: "Деревянный кубик 'Алфавит'",
-            price: 35,
+            price: 50,
             id: "TOY003",
             icons: ["cube_alphabet_icon"]
           },
           {
             name: "Резной медвежонок",
-            price: 50,
+            price: 20,
             id: "TOY004",
             icons: ["carved_bear_icon"]
           },
           {
             name: "Каталка 'Дерево с птичками'",
-            price: 60,
+            price: 30,
             id: "TOY005",
             icons: ["push_along_tree_birds_icon"]
           }
@@ -119,7 +119,7 @@ export const products: IProducts[] = [
         items: [
           {
             name: "Рамка для фото 'Лесной уголок'",
-            price: 25,
+            price: 20,
             id: "FRAME001",
             icons: ["photo_frame_forest_corner_icon"]
           },
@@ -131,19 +131,19 @@ export const products: IProducts[] = [
           },
           {
             name: "Декоративная рамка 'Дерево и бабочки'",
-            price: 35,
+            price: 50,
             id: "FRAME003",
             icons: ["photo_frame_tree_butterflies_icon"]
           },
           {
             name: "Рамка для зеркала 'Природная красота'",
-            price: 50,
+            price: 20,
             id: "FRAME004",
             icons: ["mirror_frame_natural_beauty_icon"]
           },
           {
             name: "Овальная деревянная рамка",
-            price: 60,
+            price: 30,
             id: "FRAME005",
             icons: ["oval_wooden_frame_icon"]
           }
@@ -166,19 +166,19 @@ export const products: IProducts[] = [
           },
           {
             name: "Магниты 'Животные леса'",
-            price: 35,
+            price: 50,
             id: "ACC003",
             icons: ["magnets_forest_animals_set_icon"]
           },
           {
             name: "Карманный зеркальце 'Лесный пейзаж'",
-            price: 50,
+            price: 20,
             id: "ACC004",
             icons: ["pocket_mirror_forest_landscape_icon"]
           },
           {
             name: "Комплект ручек 'Дерево и ствол'",
-            price: 60,
+            price: 30,
             id: "ACC005",
             icons: ["pens_tree_trunk_set_icon"]
           }
@@ -190,7 +190,7 @@ export const products: IProducts[] = [
 export const popularProducts: IItem[] = [
     {
         name: "Часы красные",
-        price: 50,
+        price: 20,
         id: "DW001",
         icons: ["clock_red_icon"]
     },

@@ -1,8 +1,8 @@
 import React from 'react';
+import Surprise from '../ui/Svg/Surprise';
+import BoxSvg from '../ui/Svg/BoxSvg';
+import EcologySvg from '../ui/Svg/EcologySvg';
 import './Styles/InfoPaths.css';
-import Surprise from '../Svg/Surprise';
-import BoxSvg from '../Svg/BoxSvg';
-import EcologySvg from '../Svg/EcologySvg';
 
 const InfoPaths: React.FC = () => {
   return (

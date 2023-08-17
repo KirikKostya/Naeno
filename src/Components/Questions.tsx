@@ -1,7 +1,7 @@
 import React from 'react';
 import { Collapse } from 'antd';
+import TwigSvg from '../ui/Svg/TwigSvg';
 import './Styles/Questions.css';
-import TwigSvg from '../Svg/TwigSvg';
 
 interface IItems{
     key: number
@@ -50,7 +50,7 @@ const items: IItems[] = [
 const Questions: React.FC = () => {
   return (
     <div id='questions' className='questionsContainer'>
-        <h3>Частозадаваемые вопросы :</h3>
+        <h3>Часто задаваемые вопросы :</h3>
         <div className='svgQuestions'>
           <TwigSvg/>
         </div>

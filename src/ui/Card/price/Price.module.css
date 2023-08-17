@@ -1,0 +1,21 @@
+.price{
+    font-family: 'Montserrat-Bold';
+    font-size: 12pt;
+    letter-spacing: .5px;
+    color: #495242;
+}
+@media screen and (max-width: 625px) {
+    .price{
+        font-size: 9pt;
+    }
+}
+@media screen and (max-width: 450px) {
+    .price{
+        font-size: 8pt;
+    }
+}
+@media screen and (max-width: 425px) {
+    .price{
+        font-size: 8pt;
+    }
+}
