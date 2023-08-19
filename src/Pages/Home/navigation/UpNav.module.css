@@ -1,4 +1,3 @@
-/* @import url('../../ui/Fonts/fonts.css'); */
 .upNavContainer{
     width: 100%;
     display: flex;
@@ -8,7 +7,7 @@
     padding: 0 0;
     top: 0;
     background-color: #E8DCCE;
-    z-index: 1000;
+    z-index: 99;
 }
 .upNavContainer .fillUpNav{
     width: 95%;
@@ -33,12 +32,15 @@
     align-items: center;
     justify-content: center;
     font-size: 17pt;
+    border: none;
+    background: transparent;
     cursor: pointer;
 }
 .navField .menu{
     width: 100%;
     background: transparent;
-    font-family: 'Montserrat-Medium' !important
+    font-family: 'Montserrat-Medium' !important;
+    z-index: 99 !important;
 }
 .menuInline{
     display: none;

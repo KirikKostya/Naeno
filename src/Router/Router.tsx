@@ -4,7 +4,7 @@ import Main from '../Pages/Home/Home';
 import Catalog from '../Pages/Catalog/Catalog';
 import Delivery from '../Pages/Delivery/Delivery';
 import Return from '../Pages/Return/Return';
-import CardDetails from '../CardDetails/CardDetails';
+import CardDetails from '../Pages/CardDetails/CardDetails';
 
 const Router:React.FC = () => {
   return (

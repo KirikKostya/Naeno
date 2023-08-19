@@ -1,5 +1,5 @@
 import React from 'react';
-import UpNavigation from '../../Components/UpNavigation';
+import UpNavigation from '../Home/navigation/UpNavigation';
 import { products } from '../../Products';
 import Card from '../../ui/Card/Card';
 import styles from './Catalog.module.css';

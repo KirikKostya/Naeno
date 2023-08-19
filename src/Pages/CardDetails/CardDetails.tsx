@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { IItem, popularProducts, products } from '../Products';
-import Header from '../ui/Card/header/Header';
-import Price from '../Card/price/Price';
+import { IItem, products } from '../../Products';
+import Header from '../../ui/Card/header/Header';
+import Price from '../../ui/Card/price/Price';
 
 const CardDetails:React.FC = () => {
 

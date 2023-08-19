@@ -1,6 +1,6 @@
 import React from 'react';
-import UpNavigation from '../../Components/UpNavigation';
-import Footer from '../../Components/Footer';
+import UpNavigation from '../Home/navigation/UpNavigation';
+import Footer from '../Home/footer/Footer';
 import TwigSvg from '../../ui/Svg/TwigSvg';
 import styles from './Return.module.css';
 

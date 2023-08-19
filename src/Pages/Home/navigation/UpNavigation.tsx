@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { Menu } from 'antd';
 import { CaretDownFilled, FolderOpenFilled, HomeFilled, PlusCircleOutlined, QuestionCircleOutlined, RetweetOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUpNavGroupState } from '../ReduxToolkit/Slices';
-import { IInitialState } from '../ReduxToolkit/Interfaces';
-import './Styles/UpNavigation.css';
+import { setUpNavGroupState } from '../../../ReduxToolkit/Slices';
+import { IInitialState } from '../../../ReduxToolkit/Interfaces';
+import styles from './UpNav.module.css';
 
 
 const UpNavigation: React.FC = () => {
@@ -123,25 +123,21 @@ const UpNavigation: React.FC = () => {
       ],
     }
   ];
-
   
   return (
     <>
-      <div className='upNavContainer'>
-        <div className='fillUpNav'>
-            <img className='logo' src={require('../ui/Photos/LOGO-3.png')} alt='photo'/>
-            <nav className='navField'>
-              <div 
-                className='hamburger' 
-                onClick={() => setActiveInlineMenu(!activeInlineMenu)}
-              > ☰ </div>
-              <Menu items={items} mode='horizontal' className='menu menuHorizontal' />
-            </nav>
+      <nav className={styles.upNavContainer}>
+        <div className={styles.fillUpNav}>
+            <img className={styles.logo} src={require('../../../ui/Photos/LOGO-3.png')} alt='photo'/>
+            <div className={styles.navField}>
+              <button className={styles.hamburger} onClick={()=>setActiveInlineMenu(prev=>!prev)}> ☰ </button>
+              <Menu items={items} mode='horizontal' className={`${styles.menu} ${styles.menuHorizontal}`} />
+            </div>
         </div>
-      </div>
-      <Menu items={items} mode='inline' className={`menu menuInline ${activeInlineMenu ? 'open' : ''}`} />
+      </nav>
+      <Menu items={items} mode='inline' className= {`${styles.menu} ${styles.menuInline} ${activeInlineMenu ? styles.open : ''}`} />
     </>
   )
 }
 
-export default UpNavigation;
+export default React.memo(UpNavigation);
