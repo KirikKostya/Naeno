@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Naeno/static/css/main.b1f51f12.css",
-    "main.js": "/Naeno/static/js/main.4c36605c.js",
+    "main.js": "/Naeno/static/js/main.2e1568f0.js",
     "static/js/787.032b0ad7.chunk.js": "/Naeno/static/js/787.032b0ad7.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/Naeno/static/media/Montserrat-Regular.087334ca601e288c996e.ttf",
     "static/media/Montserrat-Bold.ttf": "/Naeno/static/media/Montserrat-Bold.762081826406b019c89c.ttf",
@@ -13,11 +13,11 @@
     "static/media/somethingWentWrong.png": "/Naeno/static/media/somethingWentWrong.915b7e167f3e83ab3eb2.png",
     "index.html": "/Naeno/index.html",
     "main.b1f51f12.css.map": "/Naeno/static/css/main.b1f51f12.css.map",
-    "main.4c36605c.js.map": "/Naeno/static/js/main.4c36605c.js.map",
+    "main.2e1568f0.js.map": "/Naeno/static/js/main.2e1568f0.js.map",
     "787.032b0ad7.chunk.js.map": "/Naeno/static/js/787.032b0ad7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1f51f12.css",
-    "static/js/main.4c36605c.js"
+    "static/js/main.2e1568f0.js"
   ]
 }
