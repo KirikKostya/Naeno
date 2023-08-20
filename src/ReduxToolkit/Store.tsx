@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { upNavGroupStateReducer } from './Slices';
+import { iconsStateReducer, upNavGroupStateReducer } from './Slices';
 
 const store = configureStore({
     reducer: {
-        upNavGroupState: upNavGroupStateReducer
+        upNavGroupState: upNavGroupStateReducer,
+        iconState: iconsStateReducer
     }
 })
 
